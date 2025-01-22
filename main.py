@@ -111,8 +111,6 @@ class TypingSimulatorGUI:
             # Re-enable fail-safe
             pyautogui.FAILSAFE = True
            
-                       
-                
     
     def start_typing(self):
         text = self.text_area.get('1.0', tk.END)
