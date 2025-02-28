@@ -1,6 +1,9 @@
 # Typing Simulator
 
 This project is a Typing Simulator GUI application built using Python and Tkinter. The application allows users to load text from a file or enter text manually, set initial and typing delays, and simulate typing the text in another window.
+# Why?!
+
+Because in some cases, you can not copy/paset text somewhere, so, you have to type a long text yourself and you are not a fast typer!
 
 ## Features
 
