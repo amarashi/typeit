@@ -77,10 +77,17 @@ class TypingSimulatorGUI:
                 messagebox.showerror("Error", f"Error reading file: {e}")
 
     def simulate_typing(self, text, delay, initial_delay):
-        self.status_var.set(f"Starting in {initial_delay} seconds... Switch to your target window!")
+        # Count down from initial_delay to 0
+        for i in range(initial_delay, 0, -1):
+            self.status_var.set(f"Starting in {i} seconds... Switch to your target window!")
+            self.root.update()  # Update the GUI
+            time.sleep(1)
+        self.status_var.set("Starting now... Switch to your target window!")
+        self.root.update()
+        time.sleep(1)
+        
         self.start_button.configure(text="Start Typing", command=self.start_typing)
         self.stop_typing = False
-        time.sleep(initial_delay)
         
         # Disable fail-safe temporarily
         pyautogui.FAILSAFE = False
@@ -110,8 +117,6 @@ class TypingSimulatorGUI:
         finally:
             # Re-enable fail-safe
             pyautogui.FAILSAFE = True
-           
-    
     def start_typing(self):
         text = self.text_area.get('1.0', tk.END)
         print("Text to be typed:", repr(text))  # Debugging statement

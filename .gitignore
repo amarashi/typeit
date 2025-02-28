@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache/
+
+# Virtual environment
+venv/
+.env
+
+# Logs
+*.log
+
+# IDE specific files
+.vscode/
