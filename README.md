@@ -1,4 +1,4 @@
-# Typing Simulator
+# TypeIt
 
 This project is a Typing Simulator GUI application built using Python and Tkinter. The application allows users to load text from a file or enter text manually, set initial and typing delays, and simulate typing the text in another window.
 # Why?!
@@ -19,9 +19,9 @@ Because in some cases, you can not copy/paset text somewhere, so, you have to ty
 - Tkinter
 - pyautogui
 
-## Installation
+## Getting Started
 
-1. Clone the repository:
+1. Clone the repository
     ```sh
     git clone https://github.com/amarashi/typing-simulator.git
     cd typing-simulator
@@ -71,4 +71,4 @@ This file specifies the files and directories to be ignored by Git.
 
 ## License
 
-This project is licensed under the MIT License.
+MIT

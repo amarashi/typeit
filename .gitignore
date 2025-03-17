@@ -6,6 +6,7 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+dist/
 
 # Unit test / coverage reports
 .coverage
@@ -14,9 +15,15 @@ dist/
 # Virtual environment
 venv/
 .env
+.env
 
 # Logs
+*.log
 *.log
 
 # IDE specific files
 .vscode/
+
+# Node.js
+node_modules/
+.DS_Store
